@@ -30,12 +30,8 @@ SOFTWARE.
 // #include <USBHID.h>
 #include "USB.h"
 #include "USBHID.h"
-#if CONFIG_TINYUSB_HID_ENABLED
+// #if CONFIG_TINYUSB_HID_ENABLED
 
-class MyClss {       // The class
-  public:             // Access specifier
-    int myNum;        // Attribute (int variable)
-};
 
 
 // Dpad directions
@@ -115,5 +111,5 @@ class NSGamepad: public USBHIDDevice {
     uint32_t startMillis;
 };
 
-#endif  // CONFIG_TINYUSB_HID_ENABLED
+// #endif  // CONFIG_TINYUSB_HID_ENABLED
 #endif  // SWITCH_ESP32_H_

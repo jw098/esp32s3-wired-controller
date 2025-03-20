@@ -24,9 +24,8 @@ SOFTWARE.
 
 #include "switch_ESP32.h"
 
-#ifdef CONFIG_TINYUSB_HID_ENABLED
+// #ifdef CONFIG_TINYUSB_HID_ENABLED
 NSGamepad Gamepad;
-// MyClss myObj;
 void setup() {
   Gamepad.begin();
   USB.begin();
@@ -59,4 +58,4 @@ void loop() {
   delay(100);
 }
 
-#endif
+// #endif
