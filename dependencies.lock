@@ -62,12 +62,6 @@ dependencies:
       rules:
       - if: target not in [esp32c2, esp32p4]
       version: 1.2.1
-    - name: espressif/esp_hosted
-      registry_url: https://components.espressif.com
-      require: private
-      rules:
-      - if: target == esp32p4
-      version: ^0.0.25
     - name: espressif/esp_insights
       registry_url: https://components.espressif.com
       require: private
@@ -84,12 +78,6 @@ dependencies:
       rules:
       - if: target not in [esp32c2, esp32p4]
       version: 1.5.2
-    - name: espressif/esp_wifi_remote
-      registry_url: https://components.espressif.com
-      require: private
-      rules:
-      - if: target == esp32p4
-      version: ^0.4.1
     - name: espressif/libsodium
       registry_url: https://components.espressif.com
       require: private
