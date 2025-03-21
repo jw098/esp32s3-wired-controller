@@ -37,3 +37,8 @@ git clone https://github.com/hathach/tinyusb.git esp32-arduino-lib-builder/compo
 In the project folder, edit CMakeLists.txt and add the following before the `project() line:
 
 `set(EXTRA_COMPONENT_DIRS <path to esp32-arduino-lib-builder/components/arduino_tinyusb>)`
+
+# Credits
+The code was taken from here: https://github.com/esp32beans/switch_ESP32
+
+Some changes were made so that the project could be built with ESP-IDF, instead of Arduino IDE.
