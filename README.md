@@ -14,13 +14,18 @@ On Windows, you can use the installer. I recommend ensuring that the Command Pro
 5. Run in ESP-IDF terminal: `idf.py build`
 
 ## Flash onto device
-6. Run in ESP-IDF terminal: `idf.py -p [PORT] flash`
+6. Connect the ESP32-S3 to your computer via USB cable.
+    - NOTE: The ESP32-S3 has 2 USB ports. From my testing, it **does** matter which one you use to connect to the Switch. 
+    - For my board, I need to use the port closer to the `BOOT/IO` button, if I want to connect to the computer with serial.
+7. Run in ESP-IDF terminal: `idf.py -p [PORT] flash`
     - Replace `[PORT]` with your ESP32 board's USB port name. e.g. COM5. You can find this using the Device Manager.
     - Sometimes the flash can fail without reason. If it fails, try running the flash command again.
 
 ## Connecting the ESP device to the Switch
-7. Just connect the ESP32-S3 to the Switch via USB cable. No need to navigate to the `Change Grip/Order` menu.
-    - NOTE: The ESP32-S3 has 2 USB ports. From my testing, it **does** matter which one you use to connect to the Switch. For my board, I need to use the port closer to the `EN/RESET` button, if I want to connect to the Switch.
+8. Just connect the ESP32-S3 to the Switch via USB cable. No need to navigate to the `Change Grip/Order` menu.
+    - NOTE: The ESP32-S3 has 2 USB ports. From my testing, it **does** matter which one you use to connect to the Switch. 
+    - For my board, I need to use the port closer to the `EN/RESET` button, if I want to connect to the Switch.
+    - Also, if the ESP32-S3 is plugged into the computer, it may interfere with the ESP32-S3 connecting with the Switch. The workaround is to unplug the ESP32-S3 to Computer connection, and make sure that the ESP32-S3 is connected with the Switch first. Afterwards, you can then connect the ESP32-S3 to the computer without issue.
 
 # Troubleshooting
 
